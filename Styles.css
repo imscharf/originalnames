@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Hind&display=swap');
+
+
+/* Estilo universal */
+:root{
+    --cor-primaria: #191919;
+    --cor-secundaria: #ECDBBA;
+    --cor-terciaria: #C84B31;
+    --cor-hover:#2D4263;
+
+    --font-titulo:'Bruno Ace', cursive;
+    --font-resto:'Hind',sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 40%;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link{
+    font-family: var(--font-resto);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.rodape{
+    color:var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-family: 24px;
+    font-weight: 400;
+}
+
+/* Classes unicas*/
+.apresentacao{
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 42px;
+}
+.apresentacao_imagem{
+    width: 41%;
+}
+
+.apresentacao_conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apresentacao_conteudo_titulo{
+    font-size: 36px;
+    font-family: var(--font-titulo);
+}
+
+.apresentacao_conteudo_subtitulo{
+    font-size: 30px;
+    font-family: var(--font-titulo);
+}
+
+
+.titulo_destaque{
+    color:var(--cor-terciaria)
+}
+
+.apresentacao_conteudo_texto{
+    font-size: 24px;
+    font-family: var(--cor-secundaria);
+}
+
+.apresentacao_integrantes_info{
+    width: 615px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.apresentacao_integrantes{
+    display: flex;
+    flex-direction: row;
+    padding: 5% 10%;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao_integrantes_reverso{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5% 10%;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao_int{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width:1200px) {
+    .cabecalho{
+        padding: 2% 0% 0% 10%;
+    }
+
+    .apresentacao{
+        flex-direction: column;
+    }
+    
+    .apresentacao_conteudo{
+        width: auto;
+    }
+
+    .apresentacao_imagem{
+        width: 80%;
+    }
+
+    .apresentacao_int{
+        flex-direction: column;
+    }
+
+    .apresentacao_integrantes{
+        width: auto;
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao_integrantes_reverso{
+        width: auto;
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao_integrantes_info{
+        width: auto;
+    }
+}
